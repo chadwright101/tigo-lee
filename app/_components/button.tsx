@@ -5,7 +5,7 @@ import Link from "next/link";
 import { useFormStatus } from "react-dom";
 
 interface Props {
-  backgroundColor?: "khaki" | "grey";
+  backgroundColor?: "champagne";
   strokeWhite?: boolean;
   onClick?: () => void;
   typeSubmit?: boolean;
@@ -24,21 +24,19 @@ const buttonStyles = ({
   disabled,
 }: Props) =>
   classNames(
-    `flex gap-3 w-full items-center text-[20px] font-bold tracking-[0.025rem] text-white justify-center uppercase ease-in-out duration-300 py-1 px-7 ${cssClasses}`,
+    `flex gap-3 w-full items-center text-[20px] font-bold tracking-[0.025rem] text-white justify-center uppercase ease-in-out duration-300 py-1 px-7 rounded-lg ${cssClasses}`,
     {
-      "bg-khaki border-4 border-khaki desktop:hover:bg-transparent desktop:hover:text-khaki":
-        backgroundColor === "khaki" && !strokeWhite,
-      "bg-grey border-4 border-white desktop:hover:bg-white desktop:hover:text-grey":
-        backgroundColor === "grey" && !strokeWhite,
-      "bg-khaki border-4 border-white desktop:hover:bg-white desktop:hover:text-grey":
-        backgroundColor === "khaki" && strokeWhite && !disabled,
-      "bg-khaki border-4 border-white":
-        backgroundColor === "khaki" && strokeWhite && disabled,
+      "bg-champagne border-4 border-champagne desktop:hover:bg-transparent desktop:hover:text-black":
+        backgroundColor === "champagne" && !strokeWhite,
+      "bg-champagne border-4 border-white desktop:hover:bg-white desktop:hover:text-black":
+        backgroundColor === "champagne" && strokeWhite && !disabled,
+      "bg-champagne border-4 border-white cursor-not-allowed":
+        backgroundColor === "champagne" && strokeWhite && disabled,
     }
   );
 
 const Button = ({
-  backgroundColor = "khaki",
+  backgroundColor = "champagne",
   onClick,
   typeSubmit,
   children,

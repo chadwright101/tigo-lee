@@ -12,6 +12,7 @@ export default {
       white: "#FFFFFF",
       champagne: "#D8B988",
       linkBlue: "#0000FF",
+      pink: "#FBF5F3",
       transparent: "transparent",
     },
     fontSize: {
