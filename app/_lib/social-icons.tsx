@@ -1,20 +1,20 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import whatsapp from "@/public/assets/icons/whatsapp.svg";
-import facebook from "@/public/assets/icons/facebook.svg";
-import instagram from "@/public/assets/icons/instagram.svg";
-import whatsappGrey from "@/public/assets/icons/whatsapp-grey.svg";
-import facebookGrey from "@/public/assets/icons/facebook-grey.svg";
-import instagramGrey from "@/public/assets/icons/instagram-grey.svg";
+import whatsapp from "@/public/icons/whatsapp-black.svg";
+import facebook from "@/public/icons/facebook-black.svg";
+import instagram from "@/public/icons/instagram-black.svg";
+import whatsappChampagne from "@/public/icons/whatsapp-champagne.svg";
+import facebookChampagne from "@/public/icons/facebook-champagne.svg";
+import instagramChampagne from "@/public/icons/instagram-champagne.svg";
 
 interface Props {
   cssClasses?: string;
   small?: boolean;
-  grey?: boolean;
+  champagne?: boolean;
 }
 
-const SocialIcons = ({ cssClasses, small, grey }: Props) => {
+const SocialIcons = ({ cssClasses, small, champagne }: Props) => {
   if (small) {
     return (
       <ul className={`flex gap-2 ${cssClasses}`}>
@@ -26,10 +26,10 @@ const SocialIcons = ({ cssClasses, small, grey }: Props) => {
             aria-label="View our Facebook page"
           >
             <Image
-              src={!grey ? facebook : facebookGrey}
+              src={!champagne ? facebook : facebookChampagne}
               alt="View our Facebook page"
-              width={20}
-              height={20}
+              width={24}
+              height={24}
             />
           </Link>
         </li>
@@ -41,10 +41,10 @@ const SocialIcons = ({ cssClasses, small, grey }: Props) => {
             aria-label="View our Instagram profile"
           >
             <Image
-              src={!grey ? instagram : instagramGrey}
+              src={!champagne ? instagram : instagramChampagne}
               alt="View our Instagram profile"
-              width={20}
-              height={20}
+              width={24}
+              height={24}
             />
           </Link>
         </li>
@@ -56,10 +56,10 @@ const SocialIcons = ({ cssClasses, small, grey }: Props) => {
             aria-label="Get in touch on WhatsApp"
           >
             <Image
-              src={!grey ? whatsapp : whatsappGrey}
+              src={!champagne ? whatsapp : whatsappChampagne}
               alt="Get in touch on WhatsApp"
-              width={20}
-              height={20}
+              width={24}
+              height={24}
             />
           </Link>
         </li>
@@ -67,49 +67,49 @@ const SocialIcons = ({ cssClasses, small, grey }: Props) => {
     );
   } else {
     return (
-      <ul className={`flex gap-5 ml-0.5 ${cssClasses}`}>
+      <ul className={`flex gap-5 ${cssClasses}`}>
         <li>
           <Link
             href=""
-            className="grid h-10 w-10 -mx-2 -my-1.5 place-items-center tablet:hover:opacity-80 ease-in-out duration-200"
+            className="grid place-items-center tablet:hover:opacity-80 ease-in-out duration-200"
             target="_blank"
             aria-label="View our Facebook page"
           >
             <Image
-              src={!grey ? facebook : facebookGrey}
+              src={!champagne ? facebook : facebookChampagne}
               alt="View our Facebook page"
-              width={28}
-              height={28}
+              width={38}
+              height={38}
             />
           </Link>
         </li>
         <li>
           <Link
             href=""
-            className="grid h-10 w-10 -mx-2.5 -my-1.5 place-items-center tablet:hover:opacity-80 ease-in-out duration-200"
+            className="grid place-items-center tablet:hover:opacity-80 ease-in-out duration-200"
             target="_blank"
             aria-label="View our Instagram profile"
           >
             <Image
-              src={!grey ? instagram : instagramGrey}
+              src={!champagne ? instagram : instagramChampagne}
               alt="View our Instagram profile"
-              width={28}
-              height={28}
+              width={38}
+              height={38}
             />
           </Link>
         </li>
         <li>
           <Link
             href="https://wa.me/27610093643?src=qr"
-            className="grid h-10 w-10 -mx-2.5 -my-1.5 place-items-center tablet:hover:opacity-80 ease-in-out duration-200"
+            className="grid place-items-center tablet:hover:opacity-80 ease-in-out duration-200"
             target="_blank"
             aria-label="Get in touch on WhatsApp"
           >
             <Image
-              src={!grey ? whatsapp : whatsappGrey}
+              src={!champagne ? whatsapp : whatsappChampagne}
               alt="Get in touch on WhatsApp"
-              width={28}
-              height={28}
+              width={38}
+              height={38}
             />
           </Link>
         </li>

@@ -1,3 +1,4 @@
+import Footer from "./_components/navigation/footer/footer";
 import HeaderWrapper from "./_components/navigation/header/header-wrapper";
 import "./_styles/globals.css";
 
@@ -11,6 +12,7 @@ export default function RootLayout({
       <body>
         <HeaderWrapper />
         {children}
+        <Footer />
       </body>
     </html>
   );

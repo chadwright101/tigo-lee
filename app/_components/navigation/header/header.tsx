@@ -41,7 +41,11 @@ const Header = ({ isScrolled }: Props) => {
         />
         <MenuToggle setShowMenu={setShowMenu} showMenu={showMenu} />
         <nav className="hidden desktop:block ease-in-out duration-300 desktop:translate-y-[50px]">
-          <ul className="flex gap-4 list-none p-0">
+          <ul
+            className={classNames("flex gap-4 list-none p-0", {
+              "desktop:-translate-y-3": isScrolled,
+            })}
+          >
             {data.map(({ title, url }, index) => (
               <li key={index}>
                 <Link

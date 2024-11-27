@@ -28,21 +28,29 @@ const LogoComponent = ({ isScrolled, cssClasses }: Props) => {
         className={classNames(
           "w-[115px] h-auto ease-in-out desktop:duration-500 desktop:delay-300",
           {
-            "desktop:w-[65px] translate-y-7": isScrolled,
+            "desktop:w-[65px] translate-y-3 -translate-x-24": isScrolled,
             "desktop:w-[125px]": !isScrolled,
           }
         )}
       />
       <h1
         className={classNames(
-          "font-majesty text-black text-[24px] grid gap-2 justify-items-center ease-in-out duration-300 desktop:text-[32px] desktop:duration-500 desktop:delay-300",
+          "font-majesty text-black text-[24px] grid gap-2 justify-items-center ease-in-out duration-300 desktop:text-[32px] desktop:duration-500 desktop:delay-200",
           {
-            "desktop:opacity-0 desktop:-ml-[400px]": isScrolled,
+            "desktop:-mt-[28px] desktop:translate-x-1 desktop:-translate-y-1 desktop:text-[24px]":
+              isScrolled,
           }
         )}
       >
         Tigo-Lee
-        <span className="font-livvic text-[14px] font-light tracking-wide uppercase tablet:text-[16px] tablet:tracking-wider">
+        <span
+          className={classNames(
+            "font-livvic text-[14px] font-light tracking-wide uppercase tablet:text-[16px] tablet:tracking-wider ease-in-out duration-500 delay-200",
+            {
+              "desktop:opacity-0 desktop:-mt-[50px]": isScrolled,
+            }
+          )}
+        >
           Professional Make-up Artist
         </span>
       </h1>
