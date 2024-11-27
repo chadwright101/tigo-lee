@@ -38,7 +38,7 @@ const LogoComponent = ({ isScrolled, cssClasses }: Props) => {
         className={classNames(
           "font-majesty text-black text-[24px] grid gap-2 justify-items-center ease-in-out duration-300 desktop:text-[32px] desktop:duration-500 desktop:delay-200",
           {
-            "desktop:-mt-[28px] desktop:translate-x-1 desktop:translate-y-[11px] desktop:text-[24px]":
+            "desktop:-mt-[27px] desktop:translate-x-1 desktop:translate-y-[11px] desktop:text-[23px]":
               isScrolled,
           }
         )}

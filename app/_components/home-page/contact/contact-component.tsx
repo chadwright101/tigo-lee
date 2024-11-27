@@ -87,7 +87,7 @@ const ContactComponent = () => {
                     </Link>
                   )}
                 </div>
-                <SocialIcons grey />
+                <SocialIcons />
               </div>
               <div className="hidden tablet:flex gap-4 flex-col desktop:justify-self-end">
                 <h4 className="normal-case">Chat to us on WhatsApp:</h4>
