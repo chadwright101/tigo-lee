@@ -20,32 +20,18 @@ const Header = ({ isScrolled }: Props) => {
   return (
     <header
       className={classNames(
-        "bg-pink z-50 desktop:h-[106px] desktop:sticky desktop:border-b-4 border-champagne ease-in-out duration-300",
+        "bg-pink z-50 desktop:h-[106px] sticky -top-[194px] desktop:sticky desktop:border-b-4 border-champagne ease-in-out duration-300",
         {
           "desktop:top-0": !isScrolled,
           "desktop:-top-8": isScrolled,
         }
       )}
     >
-      <div
-        className={classNames(
-          "grid justify-items-center sticky top-0 desktop:px-10 max-w-[1280px] mx-auto desktop:flex desktop:justify-between",
-          {
-            "pt-4 gap-5": !showMenu,
-          }
-        )}
-      >
-        <LogoComponent
-          isScrolled={isScrolled}
-          cssClasses={showMenu ? "-mt-72" : ""}
-        />
+      <div className="grid justify-items-center pt-4 gap-5 desktop:px-10 max-w-[1280px] mx-auto desktop:flex desktop:justify-between">
+        <LogoComponent isScrolled={isScrolled} />
         <MenuToggle setShowMenu={setShowMenu} showMenu={showMenu} />
         <nav className="hidden desktop:block ease-in-out duration-300 desktop:translate-y-[50px]">
-          <ul
-            className={classNames("flex gap-4 list-none p-0", {
-              "desktop:-translate-y-3": isScrolled,
-            })}
-          >
+          <ul className="flex gap-4 list-none p-0">
             {data.map(({ title, url }, index) => (
               <li key={index}>
                 <Link

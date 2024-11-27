@@ -32,12 +32,7 @@ const MenuToggle = ({ showMenu, setShowMenu }: Props) => {
   return (
     <>
       <button
-        className={classNames(
-          "relative py-5 w-full bg-champagne ease-in-out duration-300 desktop:hidden",
-          {
-            "opacity-0": showMenu,
-          }
-        )}
+        className="sticky top-0 py-5 w-full bg-champagne border-b-4 border-pink desktop:hidden"
         onClick={() => setShowMenu(true)}
         aria-label="Open navigation menu"
       >
@@ -51,9 +46,9 @@ const MenuToggle = ({ showMenu, setShowMenu }: Props) => {
       </button>
       <button
         className={classNames(
-          "fixed z-50 desktop:hidden p-3 ml-auto top-6 right-6",
+          "fixed z-50 desktop:hidden -mr-20 ease-in-out duration-300 delay-500 p-3 ml-auto top-6 right-6",
           {
-            hidden: !showMenu,
+            "mr-0": showMenu,
           }
         )}
         onClick={() => setShowMenu(false)}
@@ -61,12 +56,9 @@ const MenuToggle = ({ showMenu, setShowMenu }: Props) => {
       >
         <Image
           src={"/icons/menu-close-icon.svg"}
-          alt="Menu open"
+          alt="Menu close"
           width={20}
           height={12}
-          className={classNames("", {
-            hidden: !showMenu,
-          })}
         />
       </button>
       <nav
