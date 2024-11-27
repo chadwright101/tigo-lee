@@ -46,7 +46,7 @@ const MenuToggle = ({ showMenu, setShowMenu }: Props) => {
       </button>
       <button
         className={classNames(
-          "fixed z-50 desktop:hidden -mr-20 ease-in-out duration-300 delay-500 p-3 ml-auto top-6 right-6",
+          "fixed z-50 desktop:hidden -mr-20 ease-in-out duration-300 delay-300 p-3 ml-auto top-6 right-6",
           {
             "mr-0": showMenu,
           }
@@ -63,7 +63,7 @@ const MenuToggle = ({ showMenu, setShowMenu }: Props) => {
       </button>
       <nav
         className={classNames(
-          "fixed top-0 left-0 bg-champagne w-full h-full ease-in-out duration-500 delay-300 z-20 desktop:hidden",
+          "fixed top-0 left-0 bg-champagne w-full h-full ease-in-out duration-300 delay-300 z-20 desktop:hidden",
           {
             "translate-x-full": !showMenu,
             "translate-x-0": showMenu,
