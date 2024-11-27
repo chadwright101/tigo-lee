@@ -1,0 +1,19 @@
+{
+  "heroSlider": [
+    "/images/placeholders/IMG_5912.jpeg",
+    "/images/placeholders/JJ-278.jpg",
+    "/images/placeholders/JJ-346.jpg"
+  ],
+  "gallerySlider": [
+    "/images/placeholders/IMG_5912.jpeg",
+    "/images/placeholders/JJ-278.jpg",
+    "/images/placeholders/JJ-346.jpg",
+    "/images/placeholders/IMG_5912.jpeg",
+    "/images/placeholders/JJ-278.jpg",
+    "/images/placeholders/JJ-346.jpg"
+  ],
+  "contact": {
+    "email": "makeup@tigolee.co.za",
+    "phone": "+27 82 897 7580"
+  }
+}

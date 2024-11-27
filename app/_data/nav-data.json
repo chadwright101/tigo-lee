@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Home",
+    "url": "/"
+  },
+  {
+    "title": "Portfolio",
+    "url": "/portfolio"
+  },
+  {
+    "title": "About",
+    "url": "/#about"
+  },
+  {
+    "title": "Vendors",
+    "url": "/vendors"
+  },
+  {
+    "title": "Contact",
+    "url": "/#contact"
+  }
+]
