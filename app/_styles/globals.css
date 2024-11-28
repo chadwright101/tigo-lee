@@ -18,6 +18,10 @@
     scroll-behavior: smooth;
   }
 
+  body {
+    @apply bg-pink
+  }
+
   * {
     color: #202020;
     font-family: "livvic", Tahoma, sans-serif;

@@ -1,9 +1,11 @@
 import Image from "next/image";
 
-import data from "@/app/_data/general-data.json";
 import classNames from "classnames";
+
 import Button from "../../button";
 import ContentWrapper from "@/app/_utils/content-wrapper";
+
+import data from "@/app/_data/general-data.json";
 
 const { galleryImages } = data;
 
@@ -17,15 +19,16 @@ const GalleryComponent = () => {
               <Image
                 src={image}
                 alt={`Tigo-Lee portfolio - Image ${index + 1}`}
-                width={1280}
-                height={400}
+                width={600}
+                height={600}
                 className="w-full h-full object-cover"
+                loading={index <= 1 ? "eager" : "lazy"}
               />
             </li>
           ))}
         </ul>
         <ul className="hidden min-[1000px]:grid gap-5 grid-rows-[auto] grid-cols-4">
-          {galleryImages.slice(0, 6).map((image, index) => (
+          {galleryImages.map((image, index) => (
             <li
               key={index}
               className={classNames("max-h-[360px]", {
@@ -39,6 +42,7 @@ const GalleryComponent = () => {
                 width={1280}
                 height={400}
                 className="w-full h-full object-cover"
+                loading={index === 0 ? "eager" : "lazy"}
               />
             </li>
           ))}
