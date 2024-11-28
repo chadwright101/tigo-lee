@@ -24,11 +24,21 @@ export async function sendEmail(formData) {
     if (honey === null) {
       const name = sanitize(formData.get("fullName"));
       const email = sanitize(formData.get("emailAddress"));
+      const phone = sanitize(formData.get("phoneNumber"));
+      const weddingDate = sanitize(formData.get("weddingDate"));
+      const weddingVenue = sanitize(formData.get("weddingVenue"));
+      const preparationVenue = sanitize(formData.get("preparationVenue"));
+      const numberOfPeople = sanitize(formData.get("numberOfPeople"));
       const message = sanitize(formData.get("message"));
 
       const emailHtmlContent = emailTemplate({
         name,
         email,
+        phone,
+        weddingDate,
+        weddingVenue,
+        preparationVenue,
+        numberOfPeople,
         message,
       });
 

@@ -49,6 +49,7 @@
     font-size: 1.5rem;
     letter-spacing: 2%;
   }
+
 }
 
 @layer components {
@@ -77,8 +78,8 @@
   }
 
   .spinner-champagne {
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
     position: relative;
   }
 
@@ -91,7 +92,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    border: 2px solid transparent;
+    border: 3px solid transparent;
     border-top-color: #d8b988;
     animation: spin 1s linear infinite;
   }
