@@ -5,7 +5,7 @@ import Image from "next/image";
 const AboutComponent = () => {
   return (
     <ContentWrapper>
-      <main className="my-10 pb-10 border-b border-black/25">
+      <main className="my-10 pb-10 border-b border-black/25 desktop:border-none desktop:mb-15 desktop:mt-8 desktop:pb-0">
         <div className="relative mb-7 tablet:hidden">
           <Image
             src="/placeholder/Frame 53.png"
