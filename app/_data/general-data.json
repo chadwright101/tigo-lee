@@ -1,16 +1,21 @@
 {
   "heroSlider": [
-    "/images/placeholders/IMG_5912.jpeg",
-    "/images/placeholders/JJ-278.jpg",
-    "/images/placeholders/JJ-346.jpg"
+    "/images/hero-slider/JJ-297.jpg",
+    "/images/hero-slider/Tigo-14.jpg",
+    "/images/hero-slider/Tigo-7.jpg",
+    "/images/hero-slider/IMG_6094.jpg",
+    "/images/hero-slider/Tigo-30.jpg",
+    "/images/hero-slider/Tigo-45.jpg",
+    "/images/hero-slider/Tigo-34.jpg"
   ],
   "galleryImages": [
-    "/images/placeholders/IMG_5912.jpeg",
-    "/images/placeholders/JJ-278.jpg",
-    "/images/placeholders/JJ-346.jpg",
-    "/images/placeholders/IMG_5912.jpeg",
-    "/images/placeholders/JJ-278.jpg",
-    "/images/placeholders/JJ-346.jpg"
+    "/images/portfolio/JJ-389.jpg",
+    "/images/portfolio/Tigo-40.jpg",
+    "/images/portfolio/Tigo-26.jpg",
+    "/images/portfolio/Tigo-43.jpg",
+    "/images/portfolio/Tigo-36.jpg",
+    "/images/portfolio/IMG_8887.jpeg",
+    "/images/portfolio/Tigo-54.jpg"
   ],
   "contact": {
     "email": "makeup@tigolee.co.za",

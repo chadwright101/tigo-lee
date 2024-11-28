@@ -101,14 +101,14 @@ const ContactComponent = () => {
             })}
           >
             <Image
-              src="/images/placeholders/JJ-346.jpg"
+              src="/images/JJ-238.jpg"
               alt="Tigo_lee Professional Make-up Artist"
               width={500}
               height={400}
               className="w-full h-full object-cover"
             />
             <Image
-              src="/images/placeholders/IMG_5912.jpeg"
+              src="/images/Tigo-31.jpg"
               alt="Tigo_lee Professional Make-up Artist"
               width={500}
               height={400}

@@ -25,12 +25,12 @@ const GalleryComponent = () => {
           ))}
         </ul>
         <ul className="hidden min-[1000px]:grid gap-5 grid-rows-[auto] grid-cols-4">
-          {galleryImages.map((image, index) => (
+          {galleryImages.slice(0, 6).map((image, index) => (
             <li
               key={index}
-              className={classNames("max-h-[340px]", {
+              className={classNames("max-h-[360px]", {
                 "col-span-4": index === 0,
-                "col-span-2": index === 1 || index === 2 || index === 5,
+                "col-span-2": index === 1 || index === 2 || index === 3,
               })}
             >
               <Image
