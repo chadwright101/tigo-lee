@@ -89,7 +89,8 @@ const ContactComponent = () => {
                     </Link>
                   )}
                 </div>
-                <SocialIcons />
+                <SocialIcons cssClasses="tablet:hidden" />
+                <SocialIcons small cssClasses="hidden tablet:flex" />
               </div>
             </div>
             <ContactForm showMore={showMore} setShowMore={setShowMore} />

@@ -7,8 +7,16 @@ export default function Home() {
   return (
     <div>
       <HeroComponent />
+      <div
+        className="-translate-y-16 tablet:-translate-y-16 desktop:-translate-y-20"
+        id="about"
+      ></div>
       <AboutComponent />
       <GalleryComponent />
+      <div
+        className="-translate-y-16 tablet:-translate-y-20 desktop:-translate-y-28"
+        id="contact"
+      ></div>
       <ContactComponent />
     </div>
   );

@@ -39,6 +39,48 @@
     "/images/portfolio/Tigo-52.jpg",
     "/images/portfolio/Tigo-54.jpg"
   ],
+  "vendorList": [
+    {
+      "url": "#",
+      "image": "/placeholder/cosmetix-logo 1.png",
+      "alt": ""
+    },
+    {
+      "url": "#",
+      "image": "/placeholder/fairview-logo 1.png",
+      "alt": ""
+    },
+    {
+      "url": "#",
+      "image": "/placeholder/memoire-logo 1.png",
+      "alt": ""
+    },
+    {
+      "url": "#",
+      "image": "/placeholder/oakfield-farm-logo 1.png",
+      "alt": ""
+    },
+    {
+      "url": "#",
+      "image": "/placeholder/riverside-country-estate-logo 1.png",
+      "alt": ""
+    },
+    {
+      "url": "#",
+      "image": "/placeholder/the-silver-sixpence-logo 1.png",
+      "alt": ""
+    },
+    {
+      "url": "#",
+      "image": "/placeholder/tsekama-logo 1.png",
+      "alt": ""
+    },
+    {
+      "url": "#",
+      "image": "/placeholder/tula-baba-logo 1.png",
+      "alt": ""
+    }
+  ],
   "contact": {
     "email": "makeup@tigolee.co.za",
     "phone": "+27 82 897 7580"
