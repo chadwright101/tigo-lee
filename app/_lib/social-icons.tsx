@@ -50,7 +50,7 @@ const SocialIcons = ({ cssClasses, small, champagne }: Props) => {
         </li>
         <li>
           <Link
-            href=""
+            href="https://wa.me/message/WCHULFMQ26MMK1"
             target="_blank"
             className="tablet:tablet:hover:opacity-80 ease-in-out duration-200"
             aria-label="Get in touch on WhatsApp"
@@ -100,7 +100,7 @@ const SocialIcons = ({ cssClasses, small, champagne }: Props) => {
         </li>
         <li>
           <Link
-            href="https://wa.me/27610093643?src=qr"
+            href="https://wa.me/message/WCHULFMQ26MMK1"
             className="grid place-items-center tablet:hover:opacity-80 ease-in-out duration-200"
             target="_blank"
             aria-label="Get in touch on WhatsApp"

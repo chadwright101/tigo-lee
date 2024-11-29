@@ -26,7 +26,7 @@ const LogoComponent = ({ isScrolled, cssClasses }: Props) => {
         width={125}
         height={101}
         className={classNames(
-          "w-[115px] h-auto ease-in-out desktop:duration-500 desktop:delay-100",
+          "w-[115px] h-auto ease-in-out desktop:duration-500",
           {
             "desktop:w-[65px] desktop:translate-y-[26px] desktop:-translate-x-24":
               isScrolled,
@@ -36,10 +36,10 @@ const LogoComponent = ({ isScrolled, cssClasses }: Props) => {
       />
       <h1
         className={classNames(
-          "font-majesty text-black text-[24px] grid gap-2 justify-items-center ease-in-out duration-300 desktop:duration-500 desktop:delay-200",
+          "font-majesty text-black text-[24px] grid gap-2 justify-items-center",
           {
             "desktop:text-[32px]": !isScrolled,
-            "desktop:-mt-[28px] desktop:translate-x-1 desktop:translate-y-[11px] desktop:text-[24px]":
+            "desktop:-translate-y-[17px] desktop:translate-x-1 desktop:text-[24px]":
               isScrolled,
           }
         )}
@@ -47,9 +47,9 @@ const LogoComponent = ({ isScrolled, cssClasses }: Props) => {
         Tigo-Lee
         <span
           className={classNames(
-            "font-livvic text-[14px] font-light tracking-wide uppercase tablet:text-[16px] tablet:tracking-wider ease-in-out duration-500 delay-100",
+            "font-livvic text-[14px] font-light tracking-wide uppercase tablet:text-[16px] tablet:tracking-wider ease-in-out duration-300",
             {
-              "desktop:opacity-0 desktop:-mt-[30px]": isScrolled,
+              "desktop:opacity-0 desktop:scale-y-0": isScrolled,
             }
           )}
         >
