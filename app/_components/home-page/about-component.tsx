@@ -13,6 +13,7 @@ const AboutComponent = () => {
             width={800}
             height={800}
             className="w-full h-full object-cover"
+            sizes="(max-width: 800px) 90vw, 45vw"
           />
           <h2 className="font-majesty absolute bottom-3 right-4 text-white">
             Tigo-Lee

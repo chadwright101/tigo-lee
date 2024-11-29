@@ -195,7 +195,7 @@ const ContactForm = ({ showMore, setShowMore }: Props) => {
                   id="message"
                   name="message"
                   className="border border-black/50 rounded bg-white py-4 px-3 font-thin col-span-2"
-                  rows={5}
+                  rows={3}
                   placeholder="Message goes here..."
                   required
                   aria-required="true"

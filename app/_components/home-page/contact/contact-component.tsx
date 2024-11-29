@@ -44,7 +44,7 @@ const ContactComponent = () => {
                   {showEmail === "Show email address" ? (
                     <button
                       onClick={handleShowEmailAddress}
-                      className="text-paragraph py-3 px-2 -my-3 -mx-2 hover:cursor-pointer tablet:p-0 tablet:m-0 italic justify-self-start text-linkBlue"
+                      className="text-paragraph py-3 px-2 -my-3 -mx-2 hover:cursor-pointer tablet:p-0 tablet:m-0 italic justify-self-start text-linkBlue tablet:hover:text-linkBlue/75 ease-in-out duration-300"
                       aria-label="Show email address"
                     >
                       {showspinnerEmail ? (
@@ -58,7 +58,7 @@ const ContactComponent = () => {
                   ) : (
                     <Link
                       href={`mailto:${showEmail}`}
-                      className="text-paragraph self-center tablet:hover:text-pink text-linkBlue"
+                      className="text-paragraph self-center tablet:hover:text-linkBlue/75 text-linkBlue ease-in-out duration-300"
                     >
                       {showEmail}
                     </Link>
@@ -69,7 +69,7 @@ const ContactComponent = () => {
                   {showPhone === "Show phone number" ? (
                     <button
                       onClick={handleShowPhoneNumber}
-                      className="text-paragraph py-3 px-2 -my-3 -mx-2 hover:cursor-pointer tablet:p-0 tablet:m-0 italic text-linkBlue"
+                      className="text-paragraph py-3 px-2 -my-3 -mx-2 hover:cursor-pointer tablet:p-0 tablet:m-0 italic text-linkBlue tablet:hover:text-linkBlue/75 ease-in-out duration-300"
                       aria-label="Show phone number"
                     >
                       {showspinnerPhone ? (
@@ -83,7 +83,7 @@ const ContactComponent = () => {
                   ) : (
                     <Link
                       href={`tel:${showPhone}`}
-                      className="text-paragraph self-center tablet:hover:text-pink text-linkBlue"
+                      className="text-paragraph self-center tablet:hover:text-linkBlue/75 text-linkBlue ease-in-out duration-300"
                     >
                       {showPhone}
                     </Link>
@@ -107,6 +107,7 @@ const ContactComponent = () => {
               width={500}
               height={400}
               className="w-full h-full object-cover"
+              sizes="50vw"
             />
             <Image
               src="/images/Tigo-31.jpg"
@@ -116,6 +117,7 @@ const ContactComponent = () => {
               className={classNames("w-full h-full object-cover", {
                 hidden: !showMore,
               })}
+              sizes="50vw"
             />
           </div>
         </div>

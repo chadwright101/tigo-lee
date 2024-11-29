@@ -12,20 +12,7 @@ const Portfolio = () => {
   return (
     <main className="pt-10 max-w-[1280px] mx-auto">
       <h2 className="text-center mb-10">Portfolio</h2>
-      <ul className="grid gap-5 min-[800px]:grid-cols-2 min-[1000px]:hidden">
-        {portfolioImages.map((image, index) => (
-          <li key={index} className="aspect-square">
-            <Image
-              src={image}
-              alt={`Tigo-Lee portfolio - Image ${index + 1}`}
-              width={800}
-              height={800}
-              className="w-full h-full object-cover"
-            />
-          </li>
-        ))}
-      </ul>
-      <ul className="hidden min-[1000px]:grid gap-5 grid-cols-3">
+      <ul className="grid gap-5 min-[800px]:grid-cols-2 min-[1000px]:grid-cols-3">
         {portfolioImages.map((image, index) => (
           <React.Fragment key={index}>
             <li
@@ -37,10 +24,11 @@ const Portfolio = () => {
               <Image
                 src={image}
                 alt={`Tigo-Lee portfolio - Image ${index + 1}`}
-                width={1280}
-                height={400}
+                width={800}
+                height={800}
                 className="w-full h-full object-cover"
                 loading={index === 0 ? "eager" : "lazy"}
+                sizes="(max-width: 800px) 100vw, (max-width: 1000px) 50vw, 33.33vw"
               />
               {index === 5 && (
                 <div className="px-5 desktop:px-0">
@@ -52,9 +40,7 @@ const Portfolio = () => {
         ))}
       </ul>
       <div className="px-7 mt-10 min-[1000px]:hidden">
-        <Button url="/#contact" cssClasses="">
-          Get In Touch
-        </Button>
+        <Button url="/#contact">Get In Touch</Button>
       </div>
     </main>
   );

@@ -4,7 +4,6 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   images: {
     deviceSizes: [425, 800, 1280],
-    imageSizes: [425, 800, 1280],
   },
 };
 

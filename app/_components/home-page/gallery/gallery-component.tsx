@@ -23,6 +23,7 @@ const GalleryComponent = () => {
                 height={600}
                 className="w-full h-full object-cover"
                 loading={index <= 1 ? "eager" : "lazy"}
+                sizes="100vw"
               />
             </li>
           ))}
@@ -43,6 +44,7 @@ const GalleryComponent = () => {
                 height={400}
                 className="w-full h-full object-cover"
                 loading={index === 0 ? "eager" : "lazy"}
+                sizes={index === 0 ? "100vw" : "50vw"}
               />
             </li>
           ))}
