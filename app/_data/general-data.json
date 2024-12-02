@@ -41,44 +41,44 @@
   ],
   "vendorList": [
     {
-      "url": "#",
-      "image": "/placeholder/cosmetix-logo 1.png",
-      "alt": ""
+      "url": "https://spoilyourselfsalon.co.za",
+      "image": "/images/vendors/spoil-yourself-hair-beauty-salon.jpeg",
+      "alt": "Spoil Yourself Hair & Beauty Salon"
     },
     {
-      "url": "#",
-      "image": "/placeholder/fairview-logo 1.png",
-      "alt": ""
+      "url": "https://louannwatersphotography.com",
+      "image": "/images/vendors/louann-waters-photography.jpg",
+      "alt": "Louann Waters Photography"
     },
     {
-      "url": "#",
-      "image": "/placeholder/memoire-logo 1.png",
-      "alt": ""
+      "url": "https://confetievents.com/",
+      "image": "/images/vendors/confeti-events.jpg",
+      "alt": "Confeti Events"
     },
     {
-      "url": "#",
-      "image": "/placeholder/oakfield-farm-logo 1.png",
-      "alt": ""
+      "url": "https://dianegoosenphotography.com",
+      "image": "/images/vendors/diane-goosen-photography.jpeg",
+      "alt": "Diane Goosen Photography"
     },
     {
-      "url": "#",
-      "image": "/placeholder/riverside-country-estate-logo 1.png",
-      "alt": ""
+      "url": "https://bestersbridalboutique.com",
+      "image": "/images/vendors/besters-bridal-boutique.jpeg",
+      "alt": "Besters' Bridal Boutique"
     },
     {
-      "url": "#",
-      "image": "/placeholder/the-silver-sixpence-logo 1.png",
-      "alt": ""
+      "url": "https://www.facebook.com/AliciaBoukes/",
+      "image": "/images/vendors/infinite-beauty-by-alicia.jpeg",
+      "alt": "Infinte Beauty by Alicia"
     },
     {
-      "url": "#",
-      "image": "/placeholder/tsekama-logo 1.png",
-      "alt": ""
+      "url": "https://www.houseofgather.info",
+      "image": "/images/vendors/house-of-gather.jpg",
+      "alt": "House of Gather"
     },
     {
-      "url": "#",
-      "image": "/placeholder/tula-baba-logo 1.png",
-      "alt": ""
+      "url": "https://www.facebook.com/people/Lashed-and-Beautiful/100087239230815/",
+      "image": "/images/vendors/lashed-and-beautiful.jpeg",
+      "alt": "Lashed and Beautiful by Jamie Leigh Ahrense"
     }
   ],
   "contact": {
