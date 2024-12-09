@@ -1,4 +1,13 @@
-export const emailTemplate = ({ name, email, message }) => {
+export const emailTemplate = ({
+  name,
+  email,
+  phone,
+  weddingDate,
+  weddingVenue,
+  preparationVenue,
+  numberOfPeople,
+  message,
+}) => {
   return `<html lang="en">
   <head>
     <meta charSet="UTF-8" />
@@ -25,54 +34,49 @@ export const emailTemplate = ({ name, email, message }) => {
             Email address: <span style="font-weight: 200; font-style: italic;">${email}</span>
           </p>
           ${
-            phone && (
+            phone
+              ? `
               <p style="font-size: 1rem; font-weight: 500;">
-                Phone:{" "}
-                <span style="font-weight: 200; font-style: italic;">
-                  ${phone}
-                </span>
-              </p>
-            )
+            Phone: <span style="font-weight: 200; font-style: italic;">${phone}</span>
+          </p>
+          `
+              : ""
           }
           ${
-            weddingDate && (
+            weddingDate
+              ? `
               <p style="font-size: 1rem; font-weight: 500;">
-                Wedding Date:{" "}
-                <span style="font-weight: 200; font-style: italic;">
-                  ${weddingDate}
-                </span>
-              </p>
-            )
+            Wedding Date: <span style="font-weight: 200; font-style: italic;">${weddingDate}</span>
+          </p>
+          `
+              : ""
           }
           ${
-            weddingVenue && (
+            weddingVenue
+              ? `
               <p style="font-size: 1rem; font-weight: 500;">
-                Wedding Venue:{" "}
-                <span style="font-weight: 200; font-style: italic;">
-                  ${weddingVenue}
-                </span>
-              </p>
-            )
+            Wedding Venue: <span style="font-weight: 200; font-style: italic;">${weddingVenue}</span>
+          </p>
+          `
+              : ""
           }
           ${
-            preparationVenue && (
+            preparationVenue
+              ? `
               <p style="font-size: 1rem; font-weight: 500;">
-                Preparation Venue:{" "}
-                <span style="font-weight: 200; font-style: italic;">
-                  ${preparationVenue}
-                </span>
-              </p>
-            )
+            Preparation Venue: <span style="font-weight: 200; font-style: italic;">${preparationVenue}</span>
+          </p>
+          `
+              : ""
           }
           ${
-            numberOfPeople && (
+            numberOfPeople
+              ? `
               <p style="font-size: 1rem; font-weight: 500;">
-                Number of People:{" "}
-                <span style="font-weight: 200; font-style: italic;">
-                  ${numberOfPeople}
-                </span>
-              </p>
-            )
+            Number of People: <span style="font-weight: 200; font-style: italic;">${numberOfPeople}</span>
+          </p>
+          `
+              : ""
           }
           <p style="font-size: 1rem; font-weight: 500;">
             Message:

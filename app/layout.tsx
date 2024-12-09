@@ -11,10 +11,10 @@ export const metadata: Metadata = {
   description:
     "Tigo-Lee Professional Make-up Artist - Bridal makeup is my specialty and true calling, as I travel throughout the Garden Route to help brides feel and look their best on their special day.",
   keywords:
-    "real brides, real brides magazine, brides, wedding, wedding magazine, real weddings",
+    "make-up, makeup, wedding make-up, wedding makeup, bridal make-up, bridal makeup, garden route, plettenberg bay, knysna, brides, wedding, wedding magazine, real weddings",
   openGraph: {
     description:
-      "Tigo-Lee Professional Make-up Artist - Bridal makeup is my specialty and true calling, as I travel throughout the Garden Route to help brides feel and look their best on their special day..",
+      "Tigo-Lee Professional Make-up Artist - Bridal makeup is my specialty and true calling, as I travel throughout the Garden Route to help brides feel and look their best on their special day.",
     type: "website",
     locale: "en_ZA",
     siteName: "Tigo-Lee Professional Make-up Artist",

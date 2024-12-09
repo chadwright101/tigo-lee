@@ -5,7 +5,6 @@ import Link from "next/link";
 import { useFormStatus } from "react-dom";
 
 interface Props {
-  backgroundColor?: "champagne";
   strokeWhite?: boolean;
   onClick?: () => void;
   typeSubmit?: boolean;
@@ -19,24 +18,21 @@ interface Props {
 
 const buttonStyles = ({
   cssClasses,
-  backgroundColor,
   strokeWhite,
   disabled,
-}: Props) =>
+  pending,
+}: Props & { pending?: boolean }) =>
   classNames(
-    `flex gap-3 w-full items-center text-[20px] font-bold tracking-[0.025rem] text-white justify-center uppercase ease-in-out duration-300 py-1 px-7 rounded-lg ${cssClasses}`,
+    `flex gap-3 bg-champagne w-full items-center text-[20px] font-bold tracking-[0.025rem] text-white justify-center uppercase ease-in-out duration-300 py-1 px-7 rounded-lg ${cssClasses}`,
     {
-      "bg-champagne border-4 border-champagne desktop:hover:bg-transparent desktop:hover:text-black":
-        backgroundColor === "champagne" && !strokeWhite,
-      "bg-champagne border-4 border-white desktop:hover:bg-white desktop:hover:text-black":
-        backgroundColor === "champagne" && strokeWhite && !disabled,
-      "bg-champagne border-4 border-white cursor-not-allowed":
-        backgroundColor === "champagne" && strokeWhite && disabled,
+      "bg-champagne cursor-not-allowed": disabled || pending,
+      "desktop:hover:bg-white desktop:hover:text-black": !disabled || !pending,
+      "border-4 border-white": strokeWhite,
+      "border-4 border-champagne": !strokeWhite,
     }
   );
 
 const Button = ({
-  backgroundColor = "champagne",
   onClick,
   typeSubmit,
   children,
@@ -56,7 +52,6 @@ const Button = ({
         target={target}
         className={buttonStyles({
           cssClasses,
-          backgroundColor,
           strokeWhite,
           disabled,
         })}
@@ -70,16 +65,20 @@ const Button = ({
       <button
         className={buttonStyles({
           cssClasses,
-          backgroundColor,
           strokeWhite,
           disabled,
+          pending,
         })}
         type={typeSubmit ? "submit" : "button"}
         onClick={onClick}
-        disabled={disabled}
+        disabled={disabled || pending}
         aria-label={children as string}
       >
-        {pending ? <div className="spinner"></div> : <>{children}</>}
+        {pending && typeSubmit ? (
+          <div className="spinner"></div>
+        ) : (
+          <>{children}</>
+        )}
       </button>
     );
   }

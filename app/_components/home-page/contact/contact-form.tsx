@@ -11,12 +11,18 @@ import { sendEmail } from "@/app/_actions/actions";
 interface Props {
   showMore: boolean;
   setShowMore: (showMore: boolean) => void;
+  showEmailSubmitted: boolean;
+  setShowEmailSubmitted: (showEmailSubmitted: boolean) => void;
 }
 
-const ContactForm = ({ showMore, setShowMore }: Props) => {
+const ContactForm = ({
+  showMore,
+  setShowMore,
+  showEmailSubmitted,
+  setShowEmailSubmitted,
+}: Props) => {
   const [submissionStartTime, setSubmissionStartTime] = useState(0);
-  const [validateRecaptcha, setValidateRecaptcha] = useState(false);
-  const [showEmailSubmitted, setShowEmailSubmitted] = useState(false);
+  const [validateRecaptcha, setValidateRecaptcha] = useState(true);
 
   useEffect(() => {
     const startSubmissionTimer = () => {
@@ -63,7 +69,7 @@ const ContactForm = ({ showMore, setShowMore }: Props) => {
       )}
       {showEmailSubmitted ? (
         <>
-          <p className="text-[20px] text-center text-white italic tablet:text-left pb-5">
+          <p className="text-[20px] text-white italic tablet:text-left">
             Your email has been sent, we will be in touch soon.
           </p>
         </>
@@ -144,6 +150,7 @@ const ContactForm = ({ showMore, setShowMore }: Props) => {
                   type="date"
                   id="weddingDate"
                   name="weddingDate"
+                  min={new Date().toISOString().split("T")[0]}
                   className="border border-black/50 bg-white h-10 py-4 px-3"
                 />
               </label>
@@ -182,6 +189,7 @@ const ContactForm = ({ showMore, setShowMore }: Props) => {
                   type="number"
                   id="numberOfPeople"
                   name="numberOfPeople"
+                  min="1"
                   className="border border-black/50 bg-white h-10 py-4 px-3"
                   placeholder="Number of people..."
                 />
@@ -204,8 +212,8 @@ const ContactForm = ({ showMore, setShowMore }: Props) => {
               <Button
                 typeSubmit
                 normalButton
-                cssClasses={classNames("tablet:self-start", {
-                  "opacity-50 desktop:cursor-not-allowed desktop:hover:px-9 desktop:hover:mx-0 tablet:col-span-2":
+                cssClasses={classNames("tablet:self-start tablet:col-span-2", {
+                  "opacity-50 desktop:cursor-not-allowed desktop:hover:px-9 desktop:hover:mx-0":
                     !validateRecaptcha,
                   "hover:desktop:opacity-90": validateRecaptcha,
                 })}
@@ -214,9 +222,7 @@ const ContactForm = ({ showMore, setShowMore }: Props) => {
               >
                 Submit
               </Button>
-              {!validateRecaptcha && (
-                <Recaptcha onChange={handleRecaptchaChange} />
-              )}
+              <Recaptcha onChange={handleRecaptchaChange} />
             </>
           )}
         </form>
