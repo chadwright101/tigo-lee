@@ -16,6 +16,7 @@ const ContactComponent = () => {
   const [showspinnerPhone, setShowSpinnerPhone] = useState(false);
   const [showspinnerEmail, setShowspinnerEmail] = useState(false);
   const [showMore, setShowMore] = useState(false);
+  const [showEmailSubmitted, setShowEmailSubmitted] = useState(false);
 
   const handleShowPhoneNumber = async () => {
     setShowSpinnerPhone(true);
@@ -93,11 +94,16 @@ const ContactComponent = () => {
                 <SocialIcons small cssClasses="hidden tablet:flex" />
               </div>
             </div>
-            <ContactForm showMore={showMore} setShowMore={setShowMore} />
+            <ContactForm
+              showMore={showMore}
+              setShowMore={setShowMore}
+              showEmailSubmitted={showEmailSubmitted}
+              setShowEmailSubmitted={setShowEmailSubmitted}
+            />
           </div>
           <div
             className={classNames("hidden desktop:grid gap-10", {
-              "grid-rows-[488px]": !showMore,
+              "grid-rows-[288px]": showEmailSubmitted,
               "grid-rows-[579.5px_579.5px]": showMore,
             })}
           >
@@ -115,7 +121,7 @@ const ContactComponent = () => {
               width={500}
               height={400}
               className={classNames("w-full h-full object-cover", {
-                hidden: !showMore,
+                hidden: !showMore || showEmailSubmitted,
               })}
               sizes="50vw"
             />

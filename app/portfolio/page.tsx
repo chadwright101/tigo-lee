@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import Image from "next/image";
 
 import classNames from "classnames";
@@ -5,6 +6,10 @@ import classNames from "classnames";
 import data from "@/app/_data/general-data.json";
 import React from "react";
 import Button from "../_components/button";
+
+export const metadata: Metadata = {
+  title: "Portfolio - Tigo-Lee Professional Make-up Artist",
+};
 
 const { portfolioImages } = data;
 
@@ -27,7 +32,7 @@ const Portfolio = () => {
                 width={800}
                 height={800}
                 className="w-full h-full object-cover"
-                loading={index === 0 ? "eager" : "lazy"}
+                loading={index < 2 ? "eager" : "lazy"}
                 sizes="(max-width: 800px) 100vw, (max-width: 1000px) 50vw, 33.33vw"
               />
               {index === 5 && (

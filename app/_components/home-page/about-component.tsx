@@ -8,14 +8,14 @@ const AboutComponent = () => {
       <main className="my-10 pb-10 border-b border-black/25 desktop:border-none desktop:mb-15 desktop:mt-8 desktop:pb-0">
         <div className="relative mb-7 tablet:hidden">
           <Image
-            src="/placeholder/Frame 53.png"
+            src="/images/Tigo-Lee-Professional-Make-up-Artist.jpg"
             alt="Tigo-Lee Professional Make-up Artist"
             width={800}
             height={800}
             className="w-full h-full object-cover"
             sizes="(max-width: 800px) 90vw, 45vw"
           />
-          <h2 className="font-majesty absolute bottom-3 right-4 text-white">
+          <h2 className="font-majesty absolute top-3 left-4 text-white">
             Tigo-Lee
           </h2>
         </div>
@@ -53,13 +53,13 @@ const AboutComponent = () => {
           </div>
           <div className="hidden relative tablet:block">
             <Image
-              src="/placeholder/Frame 53.png"
+              src="/images/Tigo-Lee-Professional-Make-up-Artist.jpg"
               alt="Tigo-Lee Professional Make-up Artist"
               width={800}
               height={800}
               className="w-full h-full object-cover"
             />
-            <h2 className="font-majesty absolute bottom-3 right-4 text-white">
+            <h2 className="font-majesty absolute top-3 left-4 text-white">
               Tigo-Lee
             </h2>
           </div>
