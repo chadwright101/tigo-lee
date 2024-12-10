@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:ror="http://rorweb.com/0.1/" >
+<channel>
+  <title>ROR Sitemap for https://www.tigolee.co.za/</title>
+  <link>https://www.tigolee.co.za/</link>
+
+<item>
+     <link>https://www.tigolee.co.za/</link>
+     <title>Home - Tigo-Lee Professional Make-up Artist</title>
+     <description>Tigo-Lee Professional Make-up Artist - Bridal makeup is my specialty and true calling, as I travel throughout the Garden Route to help brides feel and look their best on their special day.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>0</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://www.tigolee.co.za/portfolio</link>
+     <title>Portfolio - Tigo-Lee Professional Make-up Artist</title>
+     <description>Tigo-Lee Professional Make-up Artist - Bridal makeup is my specialty and true calling, as I travel throughout the Garden Route to help brides feel and look their best on their special day.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+<item>
+     <link>https://www.tigolee.co.za/vendors</link>
+     <title>Vendors - Tigo-Lee Professional Make-up Artist</title>
+     <description>Tigo-Lee Professional Make-up Artist - Bridal makeup is my specialty and true calling, as I travel throughout the Garden Route to help brides feel and look their best on their special day.</description>
+     <ror:updatePeriod></ror:updatePeriod>
+     <ror:sortOrder>1</ror:sortOrder>
+     <ror:resourceOf>sitemap</ror:resourceOf>
+</item>
+</channel>
+</rss>
+  
