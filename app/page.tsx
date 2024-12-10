@@ -6,7 +6,7 @@ import GalleryComponent from "./_components/home-page/gallery/gallery-component"
 import HeroComponent from "./_components/home-page/hero/hero-component";
 
 export const metadata: Metadata = {
-  title: "Home - Tigo-Lee Professional Make-up Artist",
+  title: "Tigo-Lee Professional Make-up Artist",
 };
 
 export default function Home() {
