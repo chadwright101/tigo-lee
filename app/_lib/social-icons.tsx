@@ -20,7 +20,7 @@ const SocialIcons = ({ cssClasses, small, champagne }: Props) => {
       <ul className={`flex gap-2 ${cssClasses}`}>
         <li>
           <Link
-            href=""
+            href="https://www.facebook.com/share/3i2AkhpwQJaDGdSh/"
             target="_blank"
             className="tablet:tablet:hover:opacity-80 ease-in-out duration-200"
             aria-label="View our Facebook page"
@@ -35,7 +35,7 @@ const SocialIcons = ({ cssClasses, small, champagne }: Props) => {
         </li>
         <li>
           <Link
-            href=""
+            href="https://www.instagram.com/tigoleemakeupartist?igsh=aWZ3b24yczYzaHFh"
             target="_blank"
             className="tablet:tablet:hover:opacity-80 ease-in-out duration-200"
             aria-label="View our Instagram profile"
