@@ -41,6 +41,11 @@
   ],
   "vendorList": [
     {
+      "url": "https://www.katemaclean.co.za",
+      "image": "/images/vendors/kate-mcclean-photography.jpg",
+      "alt": "Kate Mclean Photography"
+    },
+    {
       "url": "https://spoilyourselfsalon.co.za",
       "image": "/images/vendors/spoil-yourself-hair-beauty-salon.jpeg",
       "alt": "Spoil Yourself Hair & Beauty Salon"
