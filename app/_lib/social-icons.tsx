@@ -1,10 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
 
-import whatsapp from "@/public/icons/whatsapp-black.svg";
+import whatsapp from "@/public/icons/whatsapp-green.svg";
 import facebook from "@/public/icons/facebook-black.svg";
 import instagram from "@/public/icons/instagram-black.svg";
-import whatsappChampagne from "@/public/icons/whatsapp-champagne.svg";
+import whatsappChampagne from "@/public/icons/whatsapp-green.svg";
 import facebookChampagne from "@/public/icons/facebook-champagne.svg";
 import instagramChampagne from "@/public/icons/instagram-champagne.svg";
 
