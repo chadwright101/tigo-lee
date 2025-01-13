@@ -22,7 +22,7 @@ const ContactForm = ({
   setShowEmailSubmitted,
 }: Props) => {
   const [submissionStartTime, setSubmissionStartTime] = useState(0);
-  const [validateRecaptcha, setValidateRecaptcha] = useState(false);
+  const [validateRecaptcha, setValidateRecaptcha] = useState(true);
 
   useEffect(() => {
     const startSubmissionTimer = () => {
@@ -90,7 +90,7 @@ const ContactForm = ({
             <input
               type="email"
               id="emailAddress"
-              name="email"
+              name="emailAddress"
               className="border border-black/50 bg-white h-10 py-4 px-3 col-span-2"
               placeholder="Email address goes here..."
               autoComplete="email"
@@ -107,7 +107,7 @@ const ContactForm = ({
             <input
               type="text"
               id="fullName"
-              name="name"
+              name="fullName"
               className="border border-black/50 bg-white h-10 py-4 px-3 col-span-2"
               placeholder="Full name goes here..."
               autoComplete="name"
@@ -135,7 +135,7 @@ const ContactForm = ({
                 <input
                   type="tel"
                   id="phoneNumber"
-                  name="phone"
+                  name="phoneNumber"
                   className="border border-black/50 bg-white h-10 py-4 px-3"
                   placeholder="Phone number goes here..."
                   autoComplete="tel"
