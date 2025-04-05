@@ -41,6 +41,11 @@
   ],
   "vendorList": [
     {
+      "url": "https://thelittlethings.co.za/",
+      "image": "/images/vendors/the-little-things.jpg",
+      "alt": "The Little Things - Plettenberg Bay"
+    },
+    {
       "url": "https://www.katemaclean.co.za",
       "image": "/images/vendors/kate-mcclean-photography.jpg",
       "alt": "Kate Mclean Photography"
